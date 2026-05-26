@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helper Eye — Smart Assistance Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">HELPER <span>EYE</span></a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#gallery"><span class="en">Gallery</span><span class="zh">产品图册</span></a></li>
+      <li><a href="#products"><span class="en">Kit</span><span class="zh">套装内容</span></a></li>
+      <li><a href="#features"><span class="en">Features</span><span class="zh">产品特点</span></a></li>
+      <li><a href="#specs"><span class="en">Specs</span><span class="zh">规格</span></a></li>
+      <li><a href="#contact"><span class="en">Contact</span><span class="zh">联系</span></a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-zh" onclick="setLang('zh')">中文</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="grid-bg"></div>
+  <div class="hero-badge">
+    <span class="en">Smart Assistance Kit · Next Generation</span>
+    <span class="zh">智能辅助套装 · 全新一代</span>
+  </div>
+  <h1>HELPER <span class="accent">EYE</span></h1>
+  <p class="hero-sub">
+    <span class="en">Four-piece all-in-one smart kit. Capture, control, listen, and sync to the cloud — information at your fingertips.</span>
+    <span class="zh">四件套装，一体化智能解决方案。拍摄、遥控、传音、云端同步，让信息触手可及。</span>
+  </p>
+  <a href="#products" class="hero-cta">
+    <span class="en">Explore the Kit →</span>
+    <span class="zh">查看套装内容 →</span>
+  </a>
+  <div class="eye-svg">
+    <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="60" cy="30" rx="55" ry="28" fill="none" stroke="rgba(0,229,255,0.18)" stroke-width="1"/>
+      <ellipse cx="60" cy="30" rx="55" ry="28" fill="none" stroke="rgba(0,229,255,0.06)" stroke-width="9"/>
+      <circle cx="60" cy="30" r="18" fill="rgba(0,229,255,0.09)" stroke="#00e5ff" stroke-width="1.5"/>
+      <circle cx="60" cy="30" r="10" fill="rgba(0,229,255,0.18)"/>
+      <circle cx="60" cy="30" r="5" fill="#00e5ff"/>
+      <circle cx="55" cy="25" r="2" fill="white" opacity="0.55"/>
+      <circle cx="60" cy="30" r="18" fill="none" stroke="rgba(0,229,255,0.35)" stroke-width="0.5">
+        <animate attributeName="r" from="18" to="32" dur="2.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" from="0.35" to="0" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="bg-dark">
+  <div class="section-label"><span class="en">Product Gallery</span><span class="zh">产品图册</span></div>
+  <div class="section-title"><span class="en">Real Product Photos</span><span class="zh">产品实拍图</span></div>
+  <div class="gallery-grid">
+
+    <!-- 01 USB OTG Lens -->
+    <div class="gallery-card">
+      <!-- 替换成实拍图: 把下面的 placeholder div 删掉，改成: <img src="images/otg-lens.jpg" alt="USB OTG Lens" class="gallery-img"> -->
+      <div class="gallery-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="10" width="32" height="28" rx="4" stroke="#00e5ff" stroke-width="1.5"/><circle cx="20" cy="24" r="8" stroke="#00e5ff" stroke-width="1.5"/><circle cx="20" cy="24" r="3.5" fill="rgba(0,229,255,0.3)" stroke="#00e5ff" stroke-width="1"/><rect x="36" y="20" width="8" height="8" rx="2" stroke="#00e5ff" stroke-width="1.5"/><line x1="36" y1="24" x2="32" y2="24" stroke="#00e5ff" stroke-width="1.5"/></svg>
+        <p class="placeholder-text">PHOTO COMING SOON</p>
+      </div>
+      <div class="gallery-label">
+        <div class="gallery-label-title"><span class="en">USB OTG Lens</span><span class="zh">USB OTG 镜头</span></div>
+        <div class="gallery-label-sub"><span class="en">Wide-angle, plug &amp; play</span><span class="zh">广角镜头，即插即用</span></div>
+      </div>
+    </div>
+
+    <!-- 02 Wireless Pen — REAL PHOTO -->
+    <div class="gallery-card">
+      <img src="images/wireless-pen.jpg" alt="Wireless Control Pen" class="gallery-img">
+      <div class="gallery-label">
+        <div class="gallery-label-title"><span class="en">Wireless Control Pen</span><span class="zh">无线遥控笔</span></div>
+        <div class="gallery-label-sub"><span class="en">Bluetooth remote shutter</span><span class="zh">蓝牙遥控拍照</span></div>
+      </div>
+    </div>
+
+    <!-- 03 Earpiece -->
+    <div class="gallery-card">
+      <!-- 替换成实拍图: <img src="images/earpiece.jpg" alt="Mini Invisible Earpiece" class="gallery-img"> -->
+      <div class="gallery-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="26" rx="10" ry="12" stroke="#00e5ff" stroke-width="1.5"/><circle cx="24" cy="28" r="4" fill="rgba(0,229,255,0.2)" stroke="#00e5ff" stroke-width="1"/><circle cx="24" cy="28" r="1.5" fill="#00e5ff"/></svg>
+        <p class="placeholder-text">PHOTO COMING SOON</p>
+      </div>
+      <div class="gallery-label">
+        <div class="gallery-label-title"><span class="en">Mini Invisible Earpiece</span><span class="zh">迷你隐形耳机</span></div>
+        <div class="gallery-label-sub"><span class="en">Fully in-ear, ultra discreet</span><span class="zh">完全入耳，超小隐形</span></div>
+      </div>
+    </div>
+
+    <!-- 04 App -->
+    <div class="gallery-card">
+      <!-- 替换成实拍图: <img src="images/app-screenshot.jpg" alt="Dedicated App" class="gallery-img"> -->
+      <div class="gallery-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="32" rx="5" stroke="#00e5ff" stroke-width="1.5"/><path d="M24 20v-8M18 16l6-4 6 4" stroke="#00e5ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="22" width="20" height="12" rx="3" fill="rgba(0,229,255,0.1)" stroke="#00e5ff" stroke-width="1"/></svg>
+        <p class="placeholder-text">PHOTO COMING SOON</p>
+      </div>
+      <div class="gallery-label">
+        <div class="gallery-label-title"><span class="en">Dedicated App</span><span class="zh">配套专属 APP</span></div>
+        <div class="gallery-label-sub"><span class="en">Auto-sync to Google Drive</span><span class="zh">自动上传谷歌云盘</span></div>
+      </div>
+    </div>
+
+    <!-- 05 Full Kit (wide) -->
+    <div class="gallery-card gallery-wide">
+      <!-- 替换成实拍图: <img src="images/full-kit.jpg" alt="Full Helper Eye Kit" class="gallery-img"> -->
+      <div class="gallery-placeholder" style="aspect-ratio:16/6">
+        <svg width="64" height="48" viewBox="0 0 64 48" fill="none"><rect x="2" y="12" width="18" height="14" rx="3" stroke="#00e5ff" stroke-width="1.2"/><circle cx="11" cy="19" r="4" stroke="#00e5ff" stroke-width="1.2"/><rect x="26" y="8" width="8" height="22" rx="4" stroke="#00e5ff" stroke-width="1.2"/><ellipse cx="46" cy="26" rx="6" ry="7" stroke="#00e5ff" stroke-width="1.2"/><rect x="54" y="8" width="8" height="18" rx="2" stroke="#00e5ff" stroke-width="1.2"/></svg>
+        <p class="placeholder-text">COMPLETE KIT — PHOTO COMING SOON</p>
+      </div>
+      <div class="gallery-label">
+        <div class="gallery-label-title"><span class="en">Full Helper Eye Kit</span><span class="zh">Helper Eye 完整套装</span></div>
+        <div class="gallery-label-sub"><span class="en">All 4 components together</span><span class="zh">四件套装完整展示</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- KIT CONTENTS -->
+<section id="products">
+  <div class="section-label"><span class="en">Kit Contents</span><span class="zh">套装内容</span></div>
+  <div class="section-title"><span class="en">Four Pieces · One Complete System</span><span class="zh">四件一体 · 完整套装</span></div>
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="card-num">01 / 04</div>
+      <div class="card-title"><span class="en">USB OTG Lens</span><span class="zh">USB OTG 镜头</span></div>
+      <div class="card-desc"><span class="en">Plug-and-play, no drivers needed. Wide-angle lens for clear shots, compact and easy to conceal.</span><span class="zh">即插即用，无需驱动。广角镜头拍照清晰，体积小巧，容易隐藏。</span></div>
+      <div class="card-tags">
+        <span class="tag"><span class="en">Plug &amp; Play</span><span class="zh">即插即用</span></span>
+        <span class="tag"><span class="en">Wide Angle</span><span class="zh">广角镜头</span></span>
+        <span class="tag"><span class="en">HD Capture</span><span class="zh">高清拍摄</span></span>
+        <span class="tag"><span class="en">Discreet</span><span class="zh">易隐藏</span></span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-num">02 / 04</div>
+      <div class="card-title"><span class="en">Wireless Control Pen</span><span class="zh">无线遥控笔</span></div>
+      <div class="card-desc"><span class="en">Bluetooth-connected to remotely trigger the lens. Works as a real pen, takes calls, and relays phone audio to the earpiece.</span><span class="zh">蓝牙遥控镜头拍照，可正常书写，可接听电话，可将手机声音传送给隐形耳机。</span></div>
+      <div class="card-tags">
+        <span class="tag"><span class="en">Bluetooth</span><span class="zh">蓝牙遥控</span></span>
+        <span class="tag"><span class="en">Writes Normally</span><span class="zh">可正常书写</span></span>
+        <span class="tag"><span class="en">Calls</span><span class="zh">接听电话</span></span>
+        <span class="tag"><span class="en">Audio Relay</span><span class="zh">声音传送</span></span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-num">03 / 04</div>
+      <div class="card-title"><span class="en">Mini Invisible Earpiece</span><span class="zh">无线迷你隐形耳机</span></div>
+      <div class="card-desc"><span class="en">Ultra-compact design that fits completely inside the ear canal. Crystal-clear audio with stable wireless transmission.</span><span class="zh">超小体积，可完全放进耳道，佩戴隐蔽。声音清晰，无线传输稳定。</span></div>
+      <div class="card-tags">
+        <span class="tag"><span class="en">Fully In-Ear</span><span class="zh">完全隐形</span></span>
+        <span class="tag"><span class="en">Clear Audio</span><span class="zh">声音清晰</span></span>
+        <span class="tag"><span class="en">Wireless</span><span class="zh">无线传输</span></span>
+        <span class="tag"><span class="en">Ultra-small</span><span class="zh">超小体积</span></span>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-num">04 / 04</div>
+      <div class="card-title"><span class="en">Dedicated App</span><span class="zh">配套专属 APP</span></div>
+      <div class="card-desc"><span class="en">Auto-uploads photos to Google Drive for easy storage and remote viewing from anywhere.</span><span class="zh">自动上传图片至谷歌云盘，支持远程查看与方便保存，数据安全有保障。</span></div>
+      <div class="card-tags">
+        <span class="tag"><span class="en">Auto Upload</span><span class="zh">自动上传</span></span>
+        <span class="tag">Google Drive</span>
+        <span class="tag"><span class="en">Remote View</span><span class="zh">远程查看</span></span>
+        <span class="tag"><span class="en">Cloud Save</span><span class="zh">方便保存</span></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="bg-dark">
+  <div class="section-label"><span class="en">Features</span><span class="zh">产品特点</span></div>
+  <div class="section-title"><span class="en">Built for Efficiency</span><span class="zh">专为效率而生</span></div>
+  <div class="features-wrap">
+    <div class="feature-row">
+      <div class="feature-cell">
+        <div class="feature-name">📷 &nbsp;<span class="en">USB OTG Lens</span><span class="zh">USB OTG 镜头</span></div>
+        <div class="feature-detail">
+          <span class="en">· Plug and play, no drivers required<br>· Clear image quality, accurate detail<br>· Wide-angle lens for broad coverage<br>· Compact form, easy to hide and carry</span>
+          <span class="zh">· 即插即用，无需任何驱动<br>· 拍照画质清晰，细节还原准确<br>· 广角镜头，视野范围广<br>· 体积小巧，容易隐藏携带</span>
+        </div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-name">🖊 &nbsp;<span class="en">Wireless Control Pen</span><span class="zh">无线遥控笔</span></div>
+        <div class="feature-detail">
+          <span class="en">· Bluetooth remote trigger for OTG lens<br>· Looks and works like a regular pen<br>· Supports making and receiving calls<br>· Relays phone audio to the earpiece</span>
+          <span class="zh">· 蓝牙遥控 USB OTG 镜头拍照<br>· 外观正常，可日常书写使用<br>· 支持接听和拨打电话<br>· 可将手机声音传送至隐形耳机</span>
+        </div>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-cell">
+        <div class="feature-name">👂 &nbsp;<span class="en">Mini Invisible Earpiece</span><span class="zh">迷你隐形耳机</span></div>
+        <div class="feature-detail">
+          <span class="en">· Tiny enough to sit fully inside the ear canal<br>· Virtually undetectable when worn<br>· Crystal-clear sound, stable connection<br>· Comfortable for extended wear</span>
+          <span class="zh">· 超小设计，可完全放进耳道<br>· 佩戴后外观隐蔽，不易察觉<br>· 声音清晰，传输稳定不断音<br>· 舒适佩戴，长时间使用无负担</span>
+        </div>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-name">📱 &nbsp;<span class="en">Dedicated App</span><span class="zh">专属 APP</span></div>
+        <div class="feature-detail">
+          <span class="en">· Auto-uploads photos to Google Drive<br>· Remote viewing from any device, anywhere<br>· Cloud storage for long-term access<br>· Simple one-tap sync operation</span>
+          <span class="zh">· 拍摄后自动上传谷歌云盘<br>· 支持随时随地远程查看图片<br>· 云端存储，方便长期保存<br>· 操作简单，一键完成同步</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section id="specs">
+  <div class="section-label"><span class="en">Specifications</span><span class="zh">套装规格</span></div>
+  <div class="section-title"><span class="en">Helper Eye Complete Kit</span><span class="zh">Helper Eye 完整套装</span></div>
+  <div class="spec-wrap">
+    <table class="spec-table">
+      <tr>
+        <td><span class="en">Kit Name</span><span class="zh">套装名称</span></td>
+        <td>Helper Eye Smart Assistance Kit</td>
+      </tr>
+      <tr>
+        <td><span class="en">Contents</span><span class="zh">套装内容</span></td>
+        <td><span class="en">USB OTG Lens ×1 &nbsp;|&nbsp; Wireless Pen ×1 &nbsp;|&nbsp; Mini Earpiece ×1 &nbsp;|&nbsp; App ×1</span><span class="zh">USB OTG 镜头 ×1 &nbsp;|&nbsp; 遥控笔 ×1 &nbsp;|&nbsp; 隐形耳机 ×1 &nbsp;|&nbsp; 专属 APP ×1</span></td>
+      </tr>
+      <tr>
+        <td><span class="en">Lens Type</span><span class="zh">镜头类型</span></td>
+        <td><span class="en">Wide-angle USB OTG, HD capture</span><span class="zh">广角 USB OTG 镜头，高清拍摄</span></td>
+      </tr>
+      <tr>
+        <td><span class="en">Pen Functions</span><span class="zh">遥控笔功能</span></td>
+        <td><span class="en">BT shutter · Normal writing · Calls · Audio relay</span><span class="zh">蓝牙遥控拍照 · 正常书写 · 接听电话 · 声音传送</span></td>
+      </tr>
+      <tr>
+        <td><span class="en">Earpiece</span><span class="zh">耳机特点</span></td>
+        <td><span class="en">Ultra-small, fully in-ear, crystal-clear audio</span><span class="zh">超小隐形，完全入耳，声音清晰</span></td>
+      </tr>
+      <tr>
+        <td><span class="en">Cloud Sync</span><span class="zh">云端同步</span></td>
+        <td><span class="en">Auto Google Drive sync, remote access</span><span class="zh">谷歌云盘自动同步，支持远程查看</span></td>
+      </tr>
+      <tr>
+        <td><span class="en">Connectivity</span><span class="zh">连接方式</span></td>
+        <td>USB OTG + Bluetooth</td>
+      </tr>
+      <tr>
+        <td><span class="en">Compatible Devices</span><span class="zh">适用设备</span></td>
+        <td><span class="en">OTG-enabled Android smartphones</span><span class="zh">支持 OTG 的 Android 手机</span></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section class="cta-section" id="contact">
+  <div class="cta-ring r1"></div>
+  <div class="cta-ring r2"></div>
+  <div class="section-label"><span class="en">Get Started</span><span class="zh">立即获取</span></div>
+  <div class="cta-title"><span class="en">Ready to Try It?</span><span class="zh">准备好了吗？</span></div>
+  <p class="cta-sub">
+    <span class="en">Contact us to get your complete Helper Eye kit — the all-in-one smart assistance solution.</span>
+    <span class="zh">联系我们获取 Helper Eye 完整套装，体验四件合一的智能辅助方案。</span>
+  </p>
+  <a href="mailto:contact@helpereye.com" class="hero-cta">
+    <span class="en">Contact Us →</span>
+    <span class="zh">立即联系我们 →</span>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">HELPER EYE</div>
+  <div class="footer-copy">© 2025 Helper Eye · <span class="en">Smart Assistance Kit</span><span class="zh">智能辅助套装</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
