@@ -576,5 +576,5 @@
   .overview-grid { flex-wrap: wrap; gap: 12px; }
   .ov-arrow { display: none; }
   .ov-card { min-width: calc(50% - 6px); }
-  .nav-links { display: none; }
+  /* nav handled by style.css hamburger */
 }

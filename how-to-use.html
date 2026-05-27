@@ -14,19 +14,27 @@
 <nav>
   <a href="index.html" class="nav-logo">HELPER <span>EYE</span></a>
   <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="index.html#gallery"><span class="en">Gallery</span><span class="zh">产品图册</span></a></li>
-      <li><a href="index.html#products"><span class="en">Kit</span><span class="zh">套装内容</span></a></li>
-      <li><a href="index.html#features"><span class="en">Features</span><span class="zh">产品特点</span></a></li>
-      <li><a href="how-to-use.html" class="nav-active"><span class="en">How to Use</span><span class="zh">使用方式</span></a></li>
-      <li><a href="index.html#contact"><span class="en">Contact</span><span class="zh">联系</span></a></li>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#gallery" onclick="closeMenu()"><span class="en">Gallery</span><span class="zh">产品图册</span></a></li>
+      <li><a href="index.html#products" onclick="closeMenu()"><span class="en">Kit</span><span class="zh">套装内容</span></a></li>
+      <li><a href="index.html#features" onclick="closeMenu()"><span class="en">Features</span><span class="zh">产品特点</span></a></li>
+      <li><a href="how-to-use.html" class="nav-active" onclick="closeMenu()"><span class="en">How to Use</span><span class="zh">使用方式</span></a></li>
+      <li><a href="contact.html" onclick="closeMenu()"><span class="en">Contact</span><span class="zh">联系</span></a></li>
+      <li class="mobile-lang">
+        <button class="lang-btn" id="mob-btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="mob-btn-zh" onclick="setLang('zh')">中文</button>
+      </li>
     </ul>
     <div class="lang-toggle">
       <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
       <button class="lang-btn" id="btn-zh" onclick="setLang('zh')">中文</button>
     </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+<div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
 
 <!-- PAGE HERO -->
 <section class="page-hero">

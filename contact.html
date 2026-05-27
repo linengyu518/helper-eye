@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helper Eye — Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">HELPER <span>EYE</span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#gallery" onclick="closeMenu()"><span class="en">Gallery</span><span class="zh">产品图册</span></a></li>
+      <li><a href="index.html#products" onclick="closeMenu()"><span class="en">Kit</span><span class="zh">套装内容</span></a></li>
+      <li><a href="index.html#features" onclick="closeMenu()"><span class="en">Features</span><span class="zh">产品特点</span></a></li>
+      <li><a href="how-to-use.html" onclick="closeMenu()"><span class="en">How to Use</span><span class="zh">使用方式</span></a></li>
+      <li><a href="contact.html" class="nav-active" onclick="closeMenu()"><span class="en">Contact</span><span class="zh">联系</span></a></li>
+      <li class="mobile-lang">
+        <button class="lang-btn" id="mob-btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="mob-btn-zh" onclick="setLang('zh')">中文</button>
+      </li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-zh" onclick="setLang('zh')">中文</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="grid-bg"></div>
+  <div class="hero-badge">
+    <span class="en">Get in Touch</span>
+    <span class="zh">联系我们</span>
+  </div>
+  <h1 class="page-title">
+    <span class="en">Contact <span class="accent">Us</span></span>
+    <span class="zh">联系<span class="accent">我们</span></span>
+  </h1>
+  <p class="page-sub">
+    <span class="en">Have a question or ready to order? Reach us through any of the channels below.</span>
+    <span class="zh">有任何问题或准备下单？通过以下方式联系我们。</span>
+  </p>
+</section>
+
+<!-- CONTACT CARDS -->
+<section class="contact-section">
+
+  <div class="contact-grid">
+
+    <!-- Email -->
+    <a href="mailto:support@helpereye.net" class="contact-card">
+      <div class="contact-card-icon">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="40" height="28" rx="5" stroke="#00e5ff" stroke-width="1.5"/>
+          <path d="M4 16l20 13 20-13" stroke="#00e5ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="contact-card-label">
+        <span class="en">Email</span><span class="zh">电子邮件</span>
+      </div>
+      <div class="contact-card-value">support@helpereye.net</div>
+      <div class="contact-card-action">
+        <span class="en">Send Email →</span><span class="zh">发送邮件 →</span>
+      </div>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/8618124121406" target="_blank" class="contact-card whatsapp-card">
+      <div class="contact-card-icon">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="20" stroke="#00e5ff" stroke-width="1.5"/>
+          <path d="M16 32l2.5-7A10 10 0 1 1 24 34a9.9 9.9 0 0 1-5.5-1.6L16 32z" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M20 21c0-.6.4-1 1-1h.5c.3 0 .5.2.6.4l1 2.5c.1.3 0 .6-.2.8l-.6.6c.7 1.3 1.9 2.5 3.2 3.2l.6-.6c.2-.2.5-.3.8-.2l2.5 1c.3.1.4.4.4.6V29c0 .6-.4 1-1 1C22.7 30 18 25.3 18 21z" stroke="#00e5ff" stroke-width="1.2" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="contact-card-label">WhatsApp</div>
+      <div class="contact-card-value">+86 181 2412 1406</div>
+      <div class="contact-card-action">
+        <span class="en">Chat on WhatsApp →</span><span class="zh">WhatsApp 联系 →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="contact-divider">
+    <div class="divider-line-h"></div>
+    <div class="divider-label">
+      <span class="en">Shop Online</span><span class="zh">在线购买</span>
+    </div>
+    <div class="divider-line-h"></div>
+  </div>
+
+  <!-- E-COMMERCE -->
+  <div class="shop-grid">
+
+    <!-- AliExpress -->
+    <a href="https://www.aliexpress.com" target="_blank" class="shop-card">
+      <div class="shop-logo">
+        <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- AliExpress wordmark approximation -->
+          <text x="6" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#FF6A00">Ali</text>
+          <text x="44" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#e8edf5">Express</text>
+        </svg>
+      </div>
+      <div class="shop-desc">
+        <span class="en">Find Helper Eye on AliExpress — fast worldwide shipping.</span>
+        <span class="zh">在 AliExpress 上购买 Helper Eye，全球快速配送。</span>
+      </div>
+      <div class="shop-action">
+        <span class="en">Shop on AliExpress →</span><span class="zh">前往 AliExpress 购买 →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- NOTE -->
+  <div class="contact-note">
+    <span class="note-icon">💬</span>
+    <p>
+      <span class="en">We typically reply within 24 hours. For fastest response, reach us on WhatsApp.</span>
+      <span class="zh">我们通常在 24 小时内回复。如需最快回应，请通过 WhatsApp 联系我们。</span>
+    </p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">HELPER EYE</div>
+  <div class="footer-copy">© 2025 Helper Eye · <span class="en">Smart Assistance Kit</span><span class="zh">智能辅助套装</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
